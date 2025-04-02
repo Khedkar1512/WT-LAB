@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival 2024</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero {
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(250, 246, 246);
+        }
+        
+        nav {
+            padding: 2rem 5%;
+            display: column;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+        }
+        
+        nav ul {
+            display: column;
+            list-style: none;
+            justify-content: space-between;
+        }
+        
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #ffa600;
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 90%;
+            max-width: 900px;
+            color: ;
+        }
+        
+        .hero-content h1 {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .date {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #6593c7;
+            font-weight: bold;
+        }
+        
+        .location {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            font-style: italic;
+        }
+        
+        .featured-artists {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+        }
+        
+        .featured-artists p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #63d119;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .featured-artists ul {
+            list-style: none;
+            font-size: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .featured-artists ul li {
+            margin-bottom: 0.5rem;
+            color: #9dbd62;
+        }
+        
+        .cta-button {
+            padding: 1.2rem 3rem;
+            font-size: 1.3rem;
+            background-color: #5e96d6;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-top: 2rem;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            background-color: #0257b1;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        
+            nav ul {
+                gap: 1rem;
+                flex-direction: column;
+            }
+        
+            .hero-content h1 {
+                font-size: 3rem;
+                letter-spacing: 3px;
+            }
+        
+            .date {
+                font-size: 1.5rem;
+            }
+        
+            .location {
+                font-size: 1.2rem;
+            }
+        
+            .featured-artists {
+                padding: 1rem;
+            }
+        
+            .featured-artists ul {
+                font-size: 1.2rem;
+            }
+        
+            .cta-button {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <ol>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#lineup">Lineup</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#info">Info</a></li>
+            </ol>
+        </nav>
+        <div class="hero-content" id="home">
+            <h1>Music Festival</h1>
+            <p class="date">July 15-17, 2024</p>
+            <p class="location">Lake Geneva, Switzerland</p>
+            <div class="featured-artists" id="lineup">
+                <p>Featuring</p>
+                <ul>
+                    <li>Arctic Monkeys</li>
+                    <li>The Strokes</li>
+                    <li>Tame Impala</li>
+                    <li>And many more...</li>
+                </ul>
+            </div>
+            <button class="cta-button" id="tickets">Get Tickets</button>
+        </div>
+    </div>
+</body>
+</html>
